@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>EVENT REGISTRATION!</h1>
+        <p><b>Register for Our Upcoming Event!</b></p>
+        <p>Join us for an exciting event filled with insightful sessions, networking opportunities, and much more.</p>
+        <p><b>Register Now</b> to secure your spot!</p>
+    </section>
+
+    <section class="form-section">
+        <form>
+            <div class="hasmain">
+                <div class="form-container">
+                    <div class="personal">
+                        <h2>PERSONAL INFO</h2>
+                        <p>Complete your personal information:</p>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="personal" placeholder="Enter your name.." required>
+
+                        <label for="roll_no">Roll No</label>
+                        <input type="text" id="roll_no" name="personal" placeholder="Enter roll no">
+
+                        <label for="gender">Gender</label>
+                        <input type="radio" id="male" name="gender" value="Male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="prefer-not-to-say" name="gender" value="secrete">
+                        <label for="female">Prefer Not To Say</label>
+
+                        <label for="email">E-Mail</label>
+                        <input type="email" id="email" name="personal" placeholder="Enter your email.." required>
+
+                        <label for="DOB">Date of Birth</label>
+                        <input type="date" id="DOB" name="personal">
+
+                        <label for="select_dept">Department</label>
+                        <input id="select_dept" name="personal" placeholder="Select your department..."
+                            list="dept_category" required>
+                        <datalist id="dept_category">
+                            <option value="CSE"></option>
+                            <option value="EEE"></option>
+                            <option value="ECE"></option>
+                            <option value="MI"></option>
+                            <option value="CIVIL"></option>
+                            <option value="AD"></option>
+                        </datalist>
+                    </div>
+
+                    <div class="events">
+                        <h3>EVENTS</h3>
+                        <p>Select the events you want to participate in:</p>
+                        <label for="select_events">Events Category</label>
+                        <input id="select_events" name="events" placeholder="Select events..." list="event_category">
+                        <datalist id="event_category">
+                            <option value="Quiz"></option>
+                            <option value="Debate"></option>
+                            <option value="Presentation"></option>
+                            <option value="Pick and Act"></option>
+                            <option value="Hackathon"></option>
+                            <option value="Debugging"></option>
+                        </datalist>
+                    </div>
+                </div>
+
+                <div class="event-details">
+                    <h3>Event and Venue Details</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Details</th>
+                                <th>Information</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Event Date</td>
+                                <td>September 31, 2024</td>
+                            </tr>
+                            <tr>
+                                <td>Venue</td>
+                                <td>Thanam Hall</td>
+                            </tr>
+                            <tr>
+                                <td>Start Time</td>
+                                <td>9:00 AM</td>
+                            </tr>
+                            <tr>
+                                <td>Attire</td>
+                                <td>Chapri Casual</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="agreement">
+                    <label>
+                        <input type="checkbox" id="agree" name="agree" required>
+                        I agree to the above mentioned information.
+                    </label>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 - 2025. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </footer
